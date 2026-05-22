@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nous contacter — C&S Avocats Lyon</title>
+  <meta name="description" content="Contactez le cabinet C&S Avocats à Lyon. 46 rue de Brest 69002 Lyon. Tél : 04.78.62.25.06." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <span class="abbr">C&S Avocats</span>
+        <span class="fullname">Cousin &amp; Sertelon</span>
+      </a>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="domaines.html">Domaines</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="presse.html">Presse</a></li>
+        <li><a href="honoraires.html">Honoraires</a></li>
+        <li><a href="contact.html" class="active">Nous contacter</a></li>
+      </ul>
+      <a href="tel:0478622506" class="navbar-phone">04.78.62.25.06</a>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <h1>Nous contacter</h1>
+    <p class="breadcrumb">Accueil / Nous contacter</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-inner">
+
+      <div class="contact-info">
+        <h2>Coordonnées</h2>
+
+        <div class="contact-item">
+          <div class="ci-icon">📞</div>
+          <div>
+            <h4>Téléphone</h4>
+            <a href="tel:0478622506">04.78.62.25.06</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:contact@csavocats.fr">contact@csavocats.fr</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon">📍</div>
+          <div>
+            <h4>Adresse</h4>
+            <p>46 rue de Brest<br/>69002 Lyon</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon">🕐</div>
+          <div>
+            <h4>Rendez-vous</h4>
+            <p>Sur rendez-vous uniquement.<br/>Utilisez le formulaire ou appelez-nous.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;padding:1.5rem;background:var(--off-white);border-left:3px solid var(--gold);">
+          <p style="font-family:var(--font-serif);font-style:italic;color:var(--navy);font-size:1rem;">
+            « Nous nous adaptons aux capacités financières de nos clients, afin que l'argent
+            ne soit pas un frein à l'accès au droit, pour chacun. »
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <h2>Envoyer un message</h2>
+        <form
+          action="https://formspree.io/f/contact@csavocats.fr"
+          method="POST"
+          onsubmit="handleSubmit(event)"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nom">Nom et prénom *</label>
+              <input type="text" id="nom" name="nom" required placeholder="Marie Dupont" />
+            </div>
+            <div class="form-group">
+              <label for="tel">Téléphone</label>
+              <input type="tel" id="tel" name="telephone" placeholder="06 XX XX XX XX" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Votre email *</label>
+            <input type="email" id="email" name="email" required placeholder="votre@email.fr" />
+          </div>
+          <div class="form-group">
+            <label for="objet">Objet</label>
+            <input type="text" id="objet" name="objet" placeholder="Nature de votre demande" />
+          </div>
+          <div class="form-group">
+            <label for="message">Votre message *</label>
+            <textarea id="message" name="message" required placeholder="Décrivez brièvement votre situation…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold" style="width:100%;font-size:0.9rem;">
+            Envoyer le message
+          </button>
+          <p class="form-note">
+            * Champs obligatoires. Vos données sont traitées de façon confidentielle et ne sont
+            pas transmises à des tiers. Ce formulaire ne constitue pas une consultation juridique.
+          </p>
+        </form>
+        <div id="form-success" style="display:none;padding:1.5rem;background:#d4edda;border:1px solid #c3e6cb;color:#155724;margin-top:1rem;">
+          ✅ Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <div class="map-section">
+    <p>📍 Retrouvez-nous au</p>
+    <p class="addr">46 rue de Brest, 69002 Lyon</p>
+    <a
+      href="https://maps.google.com/?q=46+rue+de+Brest+69002+Lyon"
+      target="_blank"
+      rel="noopener"
+      class="btn btn-gold"
+      style="margin-top:1rem;font-size:0.8rem;"
+    >
+      Ouvrir dans Google Maps
+    </a>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="abbr">C&S Avocats</span>
+          <span class="tagline">Cousin &amp; Sertelon · Lyon</span>
+          <p>Cabinet d'avocats fondé le 1er janvier 2023.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="domaines.html">Domaines</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="presse.html">Presse</a></li>
+            <li><a href="honoraires.html">Honoraires</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li>📞 <a href="tel:0478622506">04.78.62.25.06</a></li>
+            <li>✉️ <a href="mailto:contact@csavocats.fr">contact@csavocats.fr</a></li>
+            <li>📍 46 rue de Brest, 69002 Lyon</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 C&S Avocats — Cousin &amp; Sertelon. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(r => {
+        if (r.ok) {
+          form.style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
