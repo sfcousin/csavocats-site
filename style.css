@@ -586,18 +586,24 @@ h1, h2, h3, h4 {
   margin-bottom: 0.5rem;
   font-family: var(--font-serif);
 }
-.press-card h3 a {
-  color: var(--navy);
-  text-decoration: none;
-}
-.press-card h3 a::after {
-  content: " ↗";
-  font-size: 0.75em;
-  color: var(--gold);
+.press-article-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.75rem;
   font-family: var(--font-sans);
-}
-.press-card h3 a:hover {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: var(--gold);
+  border: 1px solid var(--gold);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.press-article-link:hover {
+  background: var(--gold);
+  color: var(--white);
 }
 
 .press-card p {
