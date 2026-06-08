@@ -507,16 +507,13 @@ h1, h2, h3, h4 {
 }
 
 .attorney-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: var(--navy);
   margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  color: rgba(255,255,255,0.3);
+}
+.attorney-photo img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
 }
 
 .attorney-card h2 {
